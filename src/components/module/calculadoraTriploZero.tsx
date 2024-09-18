@@ -41,7 +41,7 @@ export const CalculadoraTripoZero = ({ register, errors }: CalculadoraProps) => 
 	);
 };
 
-export const ValorApontamentoTriploZero = ({ watch, register, errors }: CalculadoraProps) => {
+export const ValorApontamentoTriploZero = ({ watch }: CalculadoraProps) => {
 	return (
 		<FormGroup label="Resultado" flexWrap>
 			<Input

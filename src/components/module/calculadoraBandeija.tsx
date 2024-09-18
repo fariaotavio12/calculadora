@@ -36,7 +36,7 @@ export const CalculadoraBandeija = ({ register, errors }: CalculadoraProps) => {
 	);
 };
 
-export const ValorApontamentoBandeija = ({ watch, register, errors }: CalculadoraProps) => {
+export const ValorApontamentoBandeija = ({ watch }: CalculadoraProps) => {
 	return (
 		<FormGroup label="Resultado" flexWrap>
 			<Input

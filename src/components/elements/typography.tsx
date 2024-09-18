@@ -52,31 +52,37 @@ const typographyVariants = cva("w-auto h-auto", {
 const verificaSlot = (value: string) => {
 	let comp = "h1";
 	switch (value) {
-		case "lg" || "md" || "sm" || "h1":
-			comp = "h1";
-			break;
-		case "h2":
-			comp = "h2";
-			break;
-		case "h3":
-			comp = "h3";
-			break;
-		case "h4":
-			comp = "h4";
-			break;
-		case "h5":
-			comp = "h5";
-			break;
-		case "prLg" || "prMd" || "prSmall" || "prXsmall":
-			comp = "p";
-			break;
-		// Adicione mais casos conforme necessário
-		default:
-			comp = "span";
-			break;
+	  case "lg":
+	  case "md":
+	  case "sm":
+	  case "h1":
+		comp = "h1";
+		break;
+	  case "h2":
+		comp = "h2";
+		break;
+	  case "h3":
+		comp = "h3";
+		break;
+	  case "h4":
+		comp = "h4";
+		break;
+	  case "h5":
+		comp = "h5";
+		break;
+	  case "prLg":
+	  case "prMd":
+	  case "prSmall":
+	  case "prXsmall":
+		comp = "p";
+		break;
+	  // Adicione mais casos conforme necessário
+	  default:
+		comp = "span";
+		break;
 	}
 	return comp;
-};
+  };
 
 export interface TypographyProps
 	extends React.HTMLAttributes<HTMLElement>,

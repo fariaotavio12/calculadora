@@ -45,7 +45,7 @@ export const CalculadoraQueijoDia = ({ register, errors }: CalculadoraProps) => 
 	);
 };
 
-export const ValorApontamentoQueijoDias = ({ watch, register, errors }: CalculadoraProps) => {
+export const ValorApontamentoQueijoDias = ({ watch }: CalculadoraProps) => {
 	return (
 		<FormGroup label="Resultado" flexWrap>
 			<Input
