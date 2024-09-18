@@ -50,7 +50,7 @@ export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoDuoBits.valorMorango")}
-				label="Valor Apont. Iorgute TPZ Morango 480 g (kg)	"
+				label="Valor Apont. Bicamada Duo Morango 129g  (kg)"
 				placeholder=""
 			/>
 			<Input
@@ -59,7 +59,7 @@ export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoDuoBits.valorPessego")}
-				label="Valor Apont. Iorgute TPZ Pessego 480 g (kg)	"
+				label="Valor Apont. Iorgute BITS Chocodiscos 130g (kg)"
 			/>
 			<Input
 				type="number"
@@ -67,7 +67,7 @@ export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoDuoBits.valorAmeixa")}
-				label="Valor Apont. Iorgute TPZ Ameixa 480 g (kg)	"
+				label="Valor Apont. Iorgute BITS Chocobal 130g (kg)"
 			/>
 		</FormGroup>
 	);
@@ -90,7 +90,7 @@ export const calculoDuoBits = (
 		totalIorguteMorango;
 
 	var valueAmeixa =
-		((quantidadeChocobol * 0.15) /
+		((quantidadeChocobol * 0.115) /
 			(quantidadeMorango * 0.11 + quantidadeChocodiscos * 0.115 + quantidadeChocobol * 0.115)) *
 		totalIorguteMorango;
 
