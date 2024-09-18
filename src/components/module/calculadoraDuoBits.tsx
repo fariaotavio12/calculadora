@@ -24,7 +24,7 @@ export const CalculadoraDuoBits = ({ register, errors }: CalculadoraProps) => {
 			<Input
 				type="number"
 				widthFull
-				label="Qnt. BITS Chocodiscos 130 g (un)"
+				label="Qnt. BITS Chocodiscos 130g (un)"
 				placeholder=""
 				{...register("apontamentoDuoBits.quantidadeBITSChocodiscos")}
 				notification={errors.apontamentoDuoBits?.quantidadeBITSChocodiscos?.message}
@@ -32,7 +32,7 @@ export const CalculadoraDuoBits = ({ register, errors }: CalculadoraProps) => {
 			<Input
 				type="number"
 				widthFull
-				label="Qnt. BITS Chocobal 130 g (un)"
+				label="Qnt. BITS Chocobal 130g (un)"
 				placeholder=""
 				{...register("apontamentoDuoBits.quantidadeBITSChocobol")}
 				notification={errors.apontamentoDuoBits?.quantidadeBITSChocobol?.message}
