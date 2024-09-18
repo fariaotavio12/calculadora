@@ -9,7 +9,7 @@ export const CalculadoraQueijoDia = ({ register, errors }: CalculadoraProps) => 
 				type="number"
 				step="0.01"
 				widthFull
-				label="Quantidade total de PI"
+				label="Quantidade total de PI (KG)"
 				placeholder=""
 				{...register("apontamentoQueijoDia.quantidadePI")}
 				notification={errors.apontamentoQueijoDia?.quantidadePI?.message}
@@ -18,7 +18,7 @@ export const CalculadoraQueijoDia = ({ register, errors }: CalculadoraProps) => 
 				type="number"
 				step="0.01"
 				widthFull
-				label="Quantidade de reprocesso"
+				label="Quantidade de reprocesso (KG)"
 				placeholder=""
 				{...register("apontamentoQueijoDia.quantidadeReprocesso")}
 				notification={errors.apontamentoQueijoDia?.quantidadeReprocesso?.message}
@@ -27,7 +27,7 @@ export const CalculadoraQueijoDia = ({ register, errors }: CalculadoraProps) => 
 				type="number"
 				step="0.01"
 				widthFull
-				label="Quantidade de PA Dia"
+				label="Quantidade de PA - Dia (KG)"
 				placeholder=""
 				{...register("apontamentoQueijoDia.quantidadePaDia")}
 				notification={errors.apontamentoQueijoDia?.quantidadePaDia?.message}
@@ -36,7 +36,7 @@ export const CalculadoraQueijoDia = ({ register, errors }: CalculadoraProps) => 
 				type="number"
 				step="0.01"
 				widthFull
-				label="Quantidade de PA CM"
+				label="Quantidade de PA - CM (KG)"
 				placeholder=""
 				{...register("apontamentoQueijoDia.quantidadePaCM")}
 				notification={errors.apontamentoQueijoDia?.quantidadePaCM?.message}
@@ -53,14 +53,14 @@ export const ValorApontamentoQueijoDias = ({ watch }: CalculadoraProps) => {
 				widthFull
 				readOnly
 				value={watch("apontamentoQueijoDia.valorPaDia")}
-				label="Valor para apontamento de PA - DIA (kg)"
+				label="Valor para empenho de PA - DIA (kg)"
 				placeholder=""
 			/>
 			<Input
 				type="number"
 				widthFull
 				readOnly
-				label="Valor para apontamento de PA - CM (kg)"
+				label="Valor para empenho de PA - CM (kg)"
 				placeholder=""
 				value={watch("apontamentoQueijoDia.valorPaCM")}
 			/>

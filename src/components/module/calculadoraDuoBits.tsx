@@ -8,7 +8,7 @@ export const CalculadoraDuoBits = ({ register, errors }: CalculadoraProps) => {
 			<Input
 				type="number"
 				widthFull
-				label="Qnt. Iorgute Duo Morango (kg)"
+				label="Qnt. total de base Iorgute Duo Morango (kg)"
 				placeholder=""
 				{...register("apontamentoDuoBits.quantidadeIorgute")}
 				notification={errors.apontamentoDuoBits?.quantidadeIorgute?.message}
@@ -16,7 +16,7 @@ export const CalculadoraDuoBits = ({ register, errors }: CalculadoraProps) => {
 			<Input
 				type="number"
 				widthFull
-				label="Qnt. Iorgute BITS Duo Mor. 129g (un)"
+				label="Qnt. Iorgute bicamada Duo Mor. 129g (un)"
 				placeholder=""
 				{...register("apontamentoDuoBits.quantidadeBITSMorango")}
 				notification={errors.apontamentoDuoBits?.quantidadeBITSMorango?.message}
@@ -51,7 +51,7 @@ export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoDuoBits.valorMorango")}
-				label="Valor Apont. Bicamada Duo Morango 129g  (kg)"
+				label="Valor Emp. da base no Duo Morango 129g  (kg)"
 				placeholder=""
 			/>
 			<Input
@@ -60,7 +60,7 @@ export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoDuoBits.valorPessego")}
-				label="Valor Apont. Iorgute BITS Chocodiscos 130g (kg)"
+				label="Valor Emp. da base no Iorgute BITS Chocodiscos 130g (kg)"
 			/>
 			<Input
 				type="number"
@@ -68,7 +68,7 @@ export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoDuoBits.valorAmeixa")}
-				label="Valor Apont. Iorgute BITS Chocobal 130g (kg)"
+				label="Valor Emp. da base no Iorgute BITS Chocobal 130g (kg)"
 			/>
 		</FormGroup>
 	);

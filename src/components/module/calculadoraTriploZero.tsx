@@ -8,7 +8,7 @@ export const CalculadoraTripoZero = ({ register, errors }: CalculadoraProps) => 
 			<Input
 				type="number"
 				widthFull
-				label="Quantidade total de base branca (Kg)"
+				label="Quantidade total de base branca (KG)"
 				placeholder=""
 				{...register("apontamentoTriploZero.quantidadeBaseBranca")}
 				notification={errors.apontamentoTriploZero?.quantidadeBaseBranca?.message}
@@ -50,7 +50,7 @@ export const ValorApontamentoTriploZero = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoTriploZero.valorTPZMorango")}
-				label="Valor Apont. Iorgute TPZ Morango 480 g (kg)"
+				label="Valor Emp. Iorgute TPZ Morango 480 g (kg)"
 				placeholder=""
 			/>
 			<Input
@@ -59,7 +59,7 @@ export const ValorApontamentoTriploZero = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoTriploZero.valorTPZPessego")}
-				label="Valor Apont. Iorgute TPZ Pessego 480 g (kg)"
+				label="Valor Emp. Iorgute TPZ Pessego 480 g (kg)"
 			/>
 			<Input
 				type="number"
@@ -67,7 +67,7 @@ export const ValorApontamentoTriploZero = ({ watch }: CalculadoraProps) => {
 				step="0.01"
 				readOnly
 				value={watch("apontamentoTriploZero.valorTPZAmeixa")}
-				label="Valor Apont. Iorgute TPZ Ameixa 480 g (kg)"
+				label="Valor Emp. Iorgute TPZ Ameixa 480 g (kg)"
 			/>
 		</FormGroup>
 	);

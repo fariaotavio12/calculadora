@@ -9,7 +9,7 @@ export const CalculadoraBandeija = ({ register, errors }: CalculadoraProps) => {
 				type="number"
 				widthFull
 				step="0.01"
-				label="Quantidade total de PS"
+				label="Quantidade total de PS (KG)"
 				placeholder=""
 				{...register("apontamentoBandeija.quantidadePs")}
 				notification={errors.apontamentoBandeija?.quantidadePs?.message}
@@ -44,7 +44,7 @@ export const ValorApontamentoBandeija = ({ watch }: CalculadoraProps) => {
 				widthFull
 				readOnly
 				value={watch("apontamentoBandeija.valorPsMorango")}
-				label="Valor para apontamento de PS no Morango (kg)"
+				label="Valor para empenho de PS - Morango (kg)"
 				placeholder=""
 			/>
 			<Input
@@ -52,7 +52,7 @@ export const ValorApontamentoBandeija = ({ watch }: CalculadoraProps) => {
 				widthFull
 				readOnly
 				value={watch("apontamentoBandeija.valorPsMix")}
-				label="Valor para apontamento de PS no Mix (kg)"
+				label="Valor para empenho de PS - Mix (kg)"
 			/>
 		</FormGroup>
 	);
