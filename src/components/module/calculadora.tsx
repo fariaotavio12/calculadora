@@ -89,9 +89,9 @@ const Calculadora = () => {
 				+watch("apontamentoDuoBits.quantidadeBITSChocobol")
 			);
 
-			setValue("apontamentoTriploZero.valorTPZMorango", resultDuoBits.valueMorango.toString());
-			setValue("apontamentoTriploZero.valorTPZPessego", resultDuoBits.valuePessego.toString());
-			setValue("apontamentoTriploZero.valorTPZAmeixa", resultDuoBits.valueAmeixa.toString());
+			setValue("apontamentoDuoBits.valorMorango", resultDuoBits.valueMorango.toString());
+			setValue("apontamentoDuoBits.valorPessego", resultDuoBits.valuePessego.toString());
+			setValue("apontamentoDuoBits.valorAmeixa", resultDuoBits.valueAmeixa.toString());
 		}
 	};
 

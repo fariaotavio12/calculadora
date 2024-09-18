@@ -44,6 +44,7 @@ export const CalculadoraDuoBits = ({ register, errors }: CalculadoraProps) => {
 export const ValorApontamentoDuoBits = ({ watch }: CalculadoraProps) => {
 	return (
 		<FormGroup label="Resultado" flexWrap>
+		
 			<Input
 				type="number"
 				widthFull
